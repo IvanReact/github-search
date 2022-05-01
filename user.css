@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  width: 60%;
+  min-height: 60vh;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1%;
+}
+
+main .containerZaSlikuDruga {
+  width: 45%;
+}
+
+main .containerZaSlikuDruga img {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid black;
+  -webkit-box-shadow: -2px 1px 14px 4px rgba(0, 0, 0, 0.43);
+          box-shadow: -2px 1px 14px 4px rgba(0, 0, 0, 0.43);
+}
+
+main .containerZaDruga {
+  width: 45%;
+  background-color: lightseagreen;
+  border-radius: 25px;
+  border: 1px solid black;
+  -webkit-box-shadow: -2px 1px 14px 4px rgba(0, 0, 0, 0.43);
+          box-shadow: -2px 1px 14px 4px rgba(0, 0, 0, 0.43);
+  padding: 2%;
+}
+/*# sourceMappingURL=user.css.map */
