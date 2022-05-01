@@ -17,6 +17,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 100vw;
 }
 
 .wrapper header {
@@ -44,7 +49,19 @@ body {
 @media screen and (max-width: 769px) {
   .wrapper header {
     height: auto;
-    width: auto;
+    width: 95%;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .wrapper header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+    padding: 0.5rem;
   }
 }
 
@@ -58,8 +75,37 @@ body {
           flex-direction: row;
 }
 
+.wrapper header .search button {
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 426px) {
+  .wrapper header .search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .wrapper header .search input {
+    width: 100%;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .wrapper header .search button {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
 .wrapper header h1 {
   text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.32);
+}
+
+@media screen and (max-width: 426px) {
+  .wrapper header h1 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .wrapper header input {
@@ -107,6 +153,20 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 426px) {
+  .wrapper main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
 .wrapper main #drugari {
   width: 90%;
   margin: 1% auto 0.5% auto;
@@ -138,6 +198,12 @@ body {
   background-color: #663399;
 }
 
+@media screen and (max-width: 426px) {
+  .wrapper main #drugariContainer {
+    width: 100%;
+  }
+}
+
 .wrapper main #randomItLjudi {
   width: 50%;
   min-height: 50vh;
@@ -153,6 +219,12 @@ body {
   border: 2px solid black;
   border-radius: 25px;
   background-color: #663399;
+}
+
+@media screen and (max-width: 426px) {
+  .wrapper main #randomItLjudi {
+    width: 100%;
+  }
 }
 
 .wrapper main #randomItLjudi h2 {

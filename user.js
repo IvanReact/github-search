@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
       fetch(`https://api.github.com/users/${getter}`)
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           createDrugar(data);
         });
   });
@@ -18,6 +17,9 @@ window.addEventListener("load", () => {
     userImage.setAttribute("src", user.avatar_url);
     
 // ===========================================================
+    const containerZaKorisnika = document.createElement("div");
+    containerZaKorisnika.classList.add('containerZaKorisnika');
+
     const containerZaDruga = document.createElement("div");
     containerZaDruga.classList.add('containerZaDruga');
   
@@ -35,8 +37,11 @@ window.addEventListener("load", () => {
     bio.innerHTML = `Bio: ${user.bio}`;
 
  //===========================================================
-    main.append(containerZaSlikuDruga);
+    main.append(containerZaKorisnika)
+    
+    containerZaKorisnika.append(containerZaSlikuDruga);
     containerZaSlikuDruga.append(userImage);
-    main.append(containerZaDruga);
+    containerZaKorisnika.append(containerZaDruga);
     containerZaDruga.append( userID, numberOfFollowers,following,bio);
+
   }
