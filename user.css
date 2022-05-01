@@ -49,6 +49,12 @@ body {
   }
 }
 
+.userWrapper main h1 {
+  padding: 1rem;
+  margin: 0rem;
+  text-align: center;
+}
+
 .userWrapper main .containerZaKorisnika {
   width: 60%;
   height: auto;
