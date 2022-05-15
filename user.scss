@@ -30,8 +30,11 @@ body {
     border-radius: 25px;
   
     @media screen and (max-width: 769px) {
+      justify-content: flex-start;
+
       margin: 1rem;
       width: 100vw;
+      height: 100vh;
     }
 
     h1{
@@ -39,10 +42,9 @@ body {
       margin: 0rem;
       text-align: center;
     }
-
   
     .containerZaKorisnika {
-      width: 60%;
+      width: 80%;
       height: auto;
 
       margin: 5% auto;
@@ -60,7 +62,8 @@ body {
         width: 45%;
   
         @media screen and (max-width: 426px) {
-          width: 14rem;
+          width: 25rem;
+          margin-bottom: 2rem;
         }
         
         img {
@@ -82,7 +85,7 @@ body {
         padding: 2%;
   
         @media screen and (max-width: 426px) {
-          width: 14rem;
+          width: 25rem;
         }
       }
     }

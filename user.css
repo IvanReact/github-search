@@ -48,8 +48,12 @@ body {
 
 @media screen and (max-width: 769px) {
   .userWrapper main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: 1rem;
     width: 100vw;
+    height: 100vh;
   }
 }
 
@@ -60,7 +64,7 @@ body {
 }
 
 .userWrapper main .containerZaKorisnika {
-  width: 60%;
+  width: 80%;
   height: auto;
   margin: 5% auto;
   display: -webkit-box;
@@ -91,7 +95,8 @@ body {
 
 @media screen and (max-width: 426px) {
   .userWrapper main .containerZaKorisnika .containerZaSlikuDruga {
-    width: 14rem;
+    width: 25rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -116,7 +121,7 @@ body {
 
 @media screen and (max-width: 426px) {
   .userWrapper main .containerZaKorisnika .containerZaDruga {
-    width: 14rem;
+    width: 25rem;
   }
 }
 

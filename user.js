@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
       fetch(`https://api.github.com/users/${getter}`)
         .then((res) => res.json())
         .then((data) => {
+          console.log(data)
           createDrugar(data);
         });
   });
@@ -22,10 +23,14 @@ window.addEventListener("load", () => {
 
     const containerZaDruga = document.createElement("div");
     containerZaDruga.classList.add('containerZaDruga');
-  
-    const userID = document.createElement("h2");
-    userID.innerHTML = `${user.name}`;
+
+    const userID = document.createElement("h3");
+    userID.innerHTML = `User ID: ${user.login}`;
     userID.classList.add("userID");
+  
+    const userName = document.createElement("h3");
+    userName.innerHTML = `User name: ${user.name}`;
+    userName.classList.add("userID");
   
     const numberOfFollowers = document.createElement("h3");
     numberOfFollowers.innerHTML = `Followers: ${user.followers}`;
@@ -42,6 +47,6 @@ window.addEventListener("load", () => {
     containerZaKorisnika.append(containerZaSlikuDruga);
     containerZaSlikuDruga.append(userImage);
     containerZaKorisnika.append(containerZaDruga);
-    containerZaDruga.append( userID, numberOfFollowers,following,bio);
+    containerZaDruga.append( userID, userName, numberOfFollowers,following,bio);
 
   }
