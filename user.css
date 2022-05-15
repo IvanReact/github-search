@@ -6,6 +6,10 @@ body {
   font-family: sans-serif;
 }
 
+.navbar {
+  background: #e1bee7;
+}
+
 .userWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +26,7 @@ body {
 .userWrapper main {
   width: 70vw;
   min-height: 30rem;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,14 +123,5 @@ body {
 .userWrapper a {
   text-decoration: none;
   margin: 0 auto;
-}
-
-.userWrapper button {
-  padding: 0.5rem;
-  margin: 0.3rem;
-  border-radius: 25px;
-  border: none;
-  color: lightseagreen;
-  width: 10rem;
 }
 /*# sourceMappingURL=user.css.map */

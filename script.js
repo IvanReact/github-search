@@ -1,8 +1,9 @@
 const drugariIzSkole = [
   "NikolaV91",
   "anamarelja",
-  "NensyN",
   "nesawesly",
+  "danzrlq",
+  "ivana02m",
   "dachoist",
 ];
 
@@ -10,7 +11,7 @@ const containerZaDrugare = document.querySelector("#drugariContainer");
 const containerZaRandomLjude = document.querySelector("#randomItLjudi");
 
 const input = document.querySelector("input");
-const button = document.querySelector("button");
+const button = document.querySelector(".btn-search");
 
 function createRandom(user) {
   user.items.forEach((e, i, arr) => {
@@ -61,13 +62,13 @@ window.addEventListener("load", () => {
     fetch(`https://api.github.com/users/${e}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         createDrugar(data);
       });
   });
 });
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (event) => {
+  event.preventDefault();
   fetch(`https://api.github.com/search/users?per_page=${9}&q=${input.value}`)
     .then((res) => res.json())
     .then((data) => {
