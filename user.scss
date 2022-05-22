@@ -7,6 +7,8 @@ body {
 
 .navbar {
   background: #e1bee7;
+  min-height: 10vh;
+  flex-shrink: 0;
 }
 
 .userWrapper {
@@ -16,8 +18,10 @@ body {
 
   main {
     width: 70vw;
-    min-height: 30rem;
-    margin-top: 0.5rem;
+    height: 75vh;
+    margin: 2.5vh auto;
+
+    flex-grow: 1;
   
     display: flex;
     justify-content: center;
@@ -31,16 +35,7 @@ body {
   
     @media screen and (max-width: 769px) {
       justify-content: flex-start;
-
-      margin: 1rem;
-      width: 100vw;
-      height: 100vh;
-    }
-
-    h1{
-      padding: 1rem;
-      margin: 0rem;
-      text-align: center;
+      width: 100%;
     }
   
     .containerZaKorisnika {
@@ -60,6 +55,8 @@ body {
   
       .containerZaSlikuDruga {
         width: 45%;
+        display: flex;
+        justify-content: center;
   
         @media screen and (max-width: 426px) {
           width: 25rem;
@@ -67,7 +64,7 @@ body {
         }
         
         img {
-          width: 100%;
+          width: 90%;
           border-radius: 25px;
           border: 1px solid black;
           box-shadow: -2px 1px 14px 4px rgba(0, 0, 0, 0.43);
@@ -85,7 +82,7 @@ body {
         padding: 2%;
   
         @media screen and (max-width: 426px) {
-          width: 25rem;
+          width: 90%;
         }
       }
     }
@@ -97,6 +94,16 @@ body {
   }
   
   
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e1bee7;
+  height: 10vh;
+  flex-shrink: 0;
 }
 
 

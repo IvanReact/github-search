@@ -6,12 +6,16 @@
 
   .navbar {
     background: #e1bee7;
+    min-height: 10vh;
+    flex-shrink: 0;
   }
 
   main {
     width: 90%;
-    min-height: 50vh;
-    margin: 0 auto 2% auto;
+    min-height: 80vh;
+    margin: 0 auto;
+
+    flex-grow: 1;
 
     display: flex;
 
@@ -53,7 +57,7 @@
 
     #randomItLjudi {
       width: 50%;
-      min-height: 50vh;
+      min-height: 20vh;
       margin: 0.5%;
 
       display: flex;
@@ -79,7 +83,7 @@
 
     .pojedinacniContainer {
       width: 30%;
-      max-height: 15rem;
+      height: auto;
 
       display: flex;
       flex-direction: column;
@@ -91,13 +95,14 @@
       background-color: lightseagreen;
 
       .userID {
-        margin-top: 0.5rem;
-        font-size: 16px;
+        margin-top: 0.1rem;
+        font-size: 0.5rem;
         text-align: center;
       }
 
       .userImage {
         border-radius: 25px;
+        width: 100%;
       }
     }
 
@@ -105,5 +110,15 @@
       cursor: pointer;
       box-shadow: -2px 1px 14px 8px rgba(46, 189, 177, 0.43);
     }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e1bee7;
+    height: 10vh;
+    flex-shrink: 0;
   }
 

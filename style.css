@@ -7,12 +7,18 @@
 
 .navbar {
   background: #e1bee7;
+  min-height: 10vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 main {
   width: 90%;
-  min-height: 50vh;
-  margin: 0 auto 2% auto;
+  min-height: 80vh;
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +77,7 @@ main #drugariContainer {
 
 main #randomItLjudi {
   width: 50%;
-  min-height: 50vh;
+  min-height: 20vh;
   margin: 0.5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +110,7 @@ main #randomItLjudi h2 {
 
 main .pojedinacniContainer {
   width: 30%;
-  max-height: 15rem;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,18 +127,35 @@ main .pojedinacniContainer {
 }
 
 main .pojedinacniContainer .userID {
-  margin-top: 0.5rem;
-  font-size: 16px;
+  margin-top: 0.1rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 
 main .pojedinacniContainer .userImage {
   border-radius: 25px;
+  width: 100%;
 }
 
 main .pojedinacniContainer:hover {
   cursor: pointer;
   -webkit-box-shadow: -2px 1px 14px 8px rgba(46, 189, 177, 0.43);
           box-shadow: -2px 1px 14px 8px rgba(46, 189, 177, 0.43);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e1bee7;
+  height: 10vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 /*# sourceMappingURL=style.css.map */
