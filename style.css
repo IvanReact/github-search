@@ -80,7 +80,7 @@ main #drugariContainer {
 main #randomItLjudi {
   width: 50%;
   min-height: 30vh;
-  margin: 2.5vh 0.5%;
+  margin: 0.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,6 +96,7 @@ main #randomItLjudi {
 
 @media screen and (max-width: 426px) {
   main #randomItLjudi {
+    margin: 2.5vh 0.5%;
     width: 100%;
   }
 }

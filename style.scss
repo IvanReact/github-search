@@ -61,7 +61,7 @@
     #randomItLjudi {
       width: 50%;
       min-height: 30vh;
-      margin: 2.5vh 0.5%;
+      margin: 0.5%;
 
       display: flex;
       justify-content: center;
@@ -72,6 +72,7 @@
       background: #e1bee7;
 
       @media screen and (max-width: 426px) {
+        margin: 2.5vh 0.5%;
         width: 100%;
       }
 
